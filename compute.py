@@ -1,3 +1,6 @@
+# Seunghoon Lee 
+# seunghoon.lee.010@gmail.com
+
 import sys
 
 MAX_INPUT_NUM = 100
