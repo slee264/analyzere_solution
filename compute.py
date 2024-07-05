@@ -74,7 +74,7 @@ if __name__ == '__main__':
     except Exception as e:
         print(e)
         print("You need to provide at least two arguments in your command: python <filename: str> <limit: float> <threshold: float>. Every argument after will be ignored.")
-        print("Every argument you input after must be convertible to float.")
+        print("Every input line must be convertible to float.")
     finally:
         sys.exit()
 
