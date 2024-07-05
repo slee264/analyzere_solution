@@ -52,7 +52,7 @@ if __name__ == '__main__':
         args = sys.argv
 
         if len(args) < 3:
-            print("You need to provide at least two arguments in your command: python <filename> <limit> <threshold>. Every argument after will be ignored.")
+            print("You need to provide at least two arguments in your command: python <filename> <threshold> <limit>. Every argument after will be ignored.")
             sys.exit()
 
         threshold = float(args[1])
