@@ -16,6 +16,8 @@ def compute(threshold, limit, nums):
 
     Returns:
         [float]: differences between num in <nums> and threshold, and the total.
+
+        * Will round output to the tenth place.
     """
     total = 0
     ans = []
