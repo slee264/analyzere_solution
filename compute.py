@@ -2,7 +2,6 @@
 # seunghoon.lee.010@gmail.com
 
 import sys
-from decimal import Decimal
 
 MAX_INPUT_NUM = 100
 
@@ -35,13 +34,13 @@ def compute(threshold, limit, nums):
         output = 0.0
         if num > threshold:
             output = num - threshold
-            room = limit - total
+            room = limit-total
             output = min(output, room)
             total += output
         
         ans.append(output)
 
-    ans.append(Decimal(total))
+    ans.append(float(total))
     return ans
 
 
@@ -56,17 +55,17 @@ if __name__ == '__main__':
             print("You need to provide at least two arguments in your command: python <filename> <threshold> <limit>. Every argument after will be ignored.")
             sys.exit()
 
-        threshold = Decimal(args[1])
-        limit = Decimal(args[2])
+        threshold = float(args[1])
+        limit = float(args[2])
 
         nums = []
         for line in sys.stdin:
-            nums.append(Decimal(line))
+            nums.append(float(line))    
 
         ans = compute(threshold, limit, nums)
 
 
-        # Right now, decimal points are slightly off due to limitations of floats in python. If you want more accuracy, we can use decimal from the Decimal library.
+        # Right now, decimal points are slightly off due to limitations of floats in python. If you want more accuracy, we can use decimal from Decimal.
         for line in ans:
             print(line)
 
