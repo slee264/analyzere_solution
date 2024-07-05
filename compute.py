@@ -38,7 +38,7 @@ def compute(threshold, limit, nums):
             output = min(output, room)
             total += output
         
-        ans.append(output)
+        ans.append(round(output, 10))
 
     ans.append(float(total))
     return ans
