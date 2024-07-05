@@ -35,7 +35,7 @@ def compute(threshold, limit, nums):
 
         if we do "output = min(output, room)", there are two scenarios.
         1. output is smaller than room, which means there is enough room to accomodate the output. So the output stays the same.
-        2. room is smaller than room, which means there is not enough room left to accomodate the output. 
+        2. room is smaller than output, which means there is not enough room left to accomodate the output. 
             So we "extract" maximum value from the output.
         """
         output = 0.0
