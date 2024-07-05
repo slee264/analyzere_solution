@@ -7,11 +7,11 @@ MAX_INPUT_NUM = 100
 
 def compute(threshold, limit, nums):
     """
-    Given a threshold and a limit, output numbers that are bigger than the threshold. However, total sum of those numbers must be smaller than the limit.
+    Given a threshold and a limit, output numbers that are bigger than the threshold. However, total positive differences of those numbers and the threshold must be smaller than the limit.
 
     Parameters:
         threshold (float/int): Threshold than which num in <nums> must be bigger.
-        limit (float/int): Limit than which total of num in <nums> that are bigger than <threshold> must be smaller.
+        limit (float/int): Limit than which total of positive differences between <threshold> and num in <nums> must be smaller.
         nums ([float/int]): input numbers.
 
     Returns:
@@ -58,8 +58,6 @@ if __name__ == '__main__':
         threshold = float(args[1])
         limit = float(args[2])
 
-        # input intake. 100 is the maximum number of inputs. If the user enters an empty line (hits enter without writing anything), 
-        # the program will compute an output with the arguments provided up until that point.
         nums = []
         for line in sys.stdin:
             nums.append(float(line))    
