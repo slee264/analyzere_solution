@@ -64,6 +64,8 @@ if __name__ == '__main__':
 
         ans = compute(threshold, limit, nums)
 
+
+        # Right now, decimal points are slightly off due to limitations of floats in python. If you want more accuracy, we can use decimal from the Decimal library.
         for line in ans:
             print(line)
 
