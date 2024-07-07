@@ -47,7 +47,7 @@ def compute(threshold, limit, nums):
         
         ans.append(round(output, 10))
 
-    ans.append(float(total))
+    ans.append(round(float(total), 10))
     return ans
 
 
